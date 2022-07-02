@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.table{
+    margin: 20px;
+    padding: 10px;
+    align:center; 
+    max-width: 97.5%;
+    max-height:max-content;
+}
+.center {
+    margin: 20px;
+    position: absolute;
+    top: 80%;
+}
+tr {
+    text-align: left;
+    vertical-align: top;
+}
