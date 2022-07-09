@@ -4,60 +4,84 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-.table{
-    margin: 4px;
-    padding: 8px;
-    align:center; 
-    max-width: 97.5%;
-    max-height:max-content;
-    padding:5%;
-    table-layout: fixed;
-    width: 100%;
-}
-.center {
-    margin: 20px;
-    position: absolute;
-    top: 80%;
-}
-.summary{
-    margin: 1%;
-    padding: 5%;
-    text-align: left;
-    max-width: max-content;
-    width: 80%;
-    margin-bottom: 20%;
 
+.navigation {
+    background-color: #0684a0;
+    list-style-type: none;
+    display: inline-block;
+} 
+                                #Navbar should span across page not a vertical list. also make it so it stays at top of page when scrolling.
+
+.center {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 2%;
+    background-color: #ffffff;
+    colour: black;
 }
 .center2 {
-    
-    position: absolute;
-    top: 80%;
-
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 2%;
     background-color: #266b7b;
+    color:#fdffff;
+    font-size:larger
 }
 tr {
     text-align: left;
     vertical-align: top;
 }
 td {
-    padding: 1%
+    padding: 1%; 
+    border: 2px solid #266b7b;      
+}
+.table{
+    margin: 2%;
+    margin-bottom: 6%;
+    align:center; 
+    max-width: 97.5%;
+    max-height:max-content;
+    padding:2%;
+    table-layout: fixed;
+    width: 100%;
+    font-size: medium;
+    border: 4px solid #266b7b;
+}
+
+.mb_font {
+    font-size: larger;
+}
+
+.summary{
+    margin: 1%;
+    padding: 2.5%;
+    text-align: left;
+    max-width: max-content;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 8%;
+    border: 6px solid #02b3db;
+    font-size: larger;
+
 }
 .learnstyle{
     max-width: 97%;
     max-height:max-content;
     margin: 10%;
     margin-top: 20%;
-    padding: 5px;
+    padding: 5%;
     align:center;
-    width: 82%% ;
-    table-layout: fixed;
+    table-layout: fixed;   
     background-color: #ffffff;
-    font-size: larger;
-    td {
-        width: 33%;
-    }
-
+    font-size: large;
 }
+.alt-td {
+    border: 4px solid #fbfdfd;
+}
+
 .big5tbl-1{
     margin: 20px;
     align:center; 
@@ -65,35 +89,22 @@ td {
     padding:5%;
     table-layout: fixed;
     width: 100%;
-    
-    td {
-        width: 50%
-    }
-   
+}
+.img9-10{ 
+    align:top;
+    height: 400px; 
+    width:620px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .big5tbl-2{
     margin: 2%;
     align:center; 
-    max-width: 98%;
+    max-width: 100%;
     max-height:max-content;
-    padding:1%;
+    width: 98%
+    padding: 1%;
     table-layout: fixed;
-    width: 100%;
     text-align: center;
-    font-size:xx-large;
-    
-    td {
-        width: 14%
-    }
-   
-}
-.img9-10{ 
-    align:top; 
-    margin-left: 25px; 
-    height: 380px; 
-    width:230px; 
-    margin-right: 25px;
-}
-td {
-    border: 1px solid #266b7b;
+    font-size:x-large;
 }
