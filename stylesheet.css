@@ -5,8 +5,8 @@ html {
     box-sizing: inherit;
 }
 .table{
-    margin: 20px;
-    padding: 10px;
+    margin: 4px;
+    padding: 8px;
     align:center; 
     max-width: 97.5%;
     max-height:max-content;
@@ -20,7 +20,20 @@ html {
     top: 80%;
 }
 .summary{
-    padding: 5%
+    margin: 1%;
+    padding: 5%;
+    text-align: left;
+    max-width: max-content;
+    width: 80%;
+    margin-bottom: 20%;
+
+}
+.center2 {
+    
+    position: absolute;
+    top: 80%;
+
+    background-color: #266b7b;
 }
 tr {
     text-align: left;
@@ -30,19 +43,20 @@ td {
     padding: 1%
 }
 .learnstyle{
-    max-width: fit-content;
+    max-width: 97%;
     max-height:max-content;
-    margin: 20px;
-    padding: 10px;
-    align:center; 
-    max-width: 97.5%;
-    max-height:max-content;
-    padding:10%;
+    margin: 10%;
+    margin-top: 20%;
+    padding: 5px;
+    align:center;
+    width: 82%% ;
     table-layout: fixed;
-    width: 100% ;
-  td {
-    width: 33%
-  }
+    background-color: #ffffff;
+    font-size: larger;
+    td {
+        width: 33%;
+    }
+
 }
 .big5tbl-1{
     margin: 20px;
@@ -58,26 +72,28 @@ td {
    
 }
 .big5tbl-2{
-    margin: 8%;
+    margin: 2%;
     align:center; 
     max-width: 98%;
     max-height:max-content;
-    padding:5%;
+    padding:1%;
     table-layout: fixed;
     width: 100%;
+    text-align: center;
+    font-size:xx-large;
     
     td {
-        width: 14.2%
+        width: 14%
     }
    
 }
 .img9-10{ 
     align:top; 
     margin-left: 25px; 
-    height: 250px; 
+    height: 380px; 
     width:230px; 
     margin-right: 25px;
 }
 td {
-    border-color:#266b7b
+    border: 1px solid #266b7b;
 }
