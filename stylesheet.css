@@ -70,16 +70,19 @@ td {
 .learnstyle{
     max-width: 97%;
     max-height:max-content;
-    margin: 10%;
-    margin-top: 20%;
+    margin: 2%;
+    margin-top: 5%;
     padding: 5%;
     align:center;
-    table-layout: fixed;   
-    background-color: #ffffff;
+    table-layout: fixed;
     font-size: large;
 }
 .alt-td {
     border: 4px solid #fbfdfd;
+}
+
+.alt-td2 {
+    border: 2px solid #fbfdfd;
 }
 
 .big5tbl-1{
@@ -98,13 +101,20 @@ td {
     margin-right: 25px;
 }
 .big5tbl-2{
-    margin: 2%;
-    align:center; 
-    max-width: 100%;
-    max-height:max-content;
-    width: 98%
-    padding: 1%;
     table-layout: fixed;
-    text-align: center;
-    font-size:x-large;
+    margin: 2%;
+    margin-left: 10%;
+    max-width: 80%;
+    max-height:max-content;
+    width: 80%;
+    padding: 1%;
+    font-size: x-large;
+    background-color: #36a3bb;
+    color:#91fdfd
+}
+h4 {
+    color:#e0b012
+}
+.hlght{
+    color:#d0ff4e
 }
