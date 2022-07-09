@@ -10,7 +10,7 @@ html {
     list-style-type: none;
     display: inline-block;
 } 
-                                #Navbar should span across page not a vertical list. also make it so it stays at top of page when scrolling.
+                                /*Navbar should span across page not a vertical list. also make it so it stays at top of page when scrolling*/
 
 .center {
     position: relative;
@@ -18,7 +18,7 @@ html {
     margin-bottom: 10%;
     padding: 2%;
     background-color: #ffffff;
-    colour: black;
+    color: black;
 }
 .center2 {
     position: relative;
@@ -60,7 +60,7 @@ td {
     text-align: left;
     max-width: max-content;
     width: 80%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: 5%;
     margin-left: 8%;
     border: 6px solid #02b3db;
@@ -109,12 +109,17 @@ td {
     width: 80%;
     padding: 1%;
     font-size: x-large;
-    background-color: #36a3bb;
-    color:#91fdfd
+    color:#112456
 }
 h4 {
-    color:#e0b012
+    color:#080808
 }
 .hlght{
-    color:#d0ff4e
+    color:#b6074d
+}
+.big5res {
+    margin: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: x-large;
 }
