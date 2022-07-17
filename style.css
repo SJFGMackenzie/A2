@@ -38,14 +38,14 @@ nav > ul {
 
 /* PROFILE PAGE */
 
-.profile {
-  background-color: #21324D;
+.card {
+  background-color: #21404D;
   padding: 15px 25px;
   border-radius: 5px;
   margin: 20px 0;
 }
 
-.profile-pic {
+.card-pic {
   max-height: 300px;
   max-width: 300px;
   border-radius: 5px;
@@ -67,15 +67,21 @@ span > a {
   text-decoration: underline;
 }
 
+/* Utility */
+
+.underline {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 800px) {
-  .profile-header {
+  .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
   
-  .profile-details {
+  .card-details {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
