@@ -19,6 +19,10 @@ body {
   padding: 0 5%;
 }
 
+/*
+  NAVIGATION
+*/
+
 nav {
   display: flex;
   align-items: center;
@@ -31,8 +35,44 @@ nav > ul {
   list-style-type: none;
 }
 
+
+
+/* PROFILE PAGE */
+
+.profile {
+  background-color: #21324D;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-pic {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+/* LINKS */
+
 a {
   color: #c3c3c5;
   font-style: none;
   text-decoration: none;
+}
+
+span > a {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 800px) {
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
 }
