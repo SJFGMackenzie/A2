@@ -31,7 +31,8 @@ nav > ul {
   list-style-type: none;
 }
 
-ul > li > a {
-  color: #162133;
+a {
+  color: #c3c3c5;
   font-style: none;
+  text-decoration: none;
 }
