@@ -55,6 +55,16 @@ nav > ul {
   max-height: 600px;
 }
 
+table {
+  border-spacing: 10px;
+  border: solid 1px white;
+}
+
+th, td {
+  width: 120px;
+  overflow: hidden;
+}
+
 /* LINKS */
 
 a {
