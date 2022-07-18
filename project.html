@@ -47,6 +47,81 @@
 
         <h3>Description</h3>
 
+        <h4>Proposed Idea</h4>
+        <p>
+          A Social Communication Platform that is specific to Defense Force Personnel and Emergency Services Personnel exclusively so they can connect with like -minded people to support mental health for these professions. Users will have access to a public server which will be an all-access area, with proposed 'notice board' type area which will provide links to online mental health assistance services and phone numbers for help and assistance lines relative to our target audience specifically. Additional to the main server, will have access to private one-on-one conversation, or chat groups. Further, the ability to create their own space that is for a particular topic or interest, eg. Fellow ARMY veterans that may want a space to be just ARMY, there maybe some police from an area that know each other might like to have their own area to be able to communicate and share in a space that is just them.
+        </p>
+
+        <p>
+          The design of the user experience has not been considered too much at this point of the project planning; However, one idea was to present it in a 'Hotel' style, with a 'Main Lobby' (being the general server), with a 'Noticeboard' (containing the mental health assistance links and phone lines), 'conference room' which would be the (private server areas); and 'Hotel Rooms' would be their (one-on-one or group-chat communication areas). Next, name it “Bravo Mike Hotel Services” (Mike = Mental, Hotel = Health). 
+        </p>
+
+        <h4>Proposed Production</h4>
+
+        <p>
+          It will be a web-based application that will offer its target audience a way to securely communicate online both privately and publicly with like-minded individuals seeking help. The platform will be built using a range of technologies to build the platform. The team currently believes that to build this project from scratch, it will require a web-based front-end powered by HTML, CSS and JavaScript, back-end services such as a web-API to service the front-end, Matrix API for handling the chat rooms, server lobbies, and all social communications in general. 
+        </p>
+
+        <div class="polaroid">
+          <img src="./images/system-diagram.jpeg" alt="System diagram">
+          <span class="polaroid-details">
+            System diagram
+          </span>
+        </div>
+
+        <div class="polaroid">
+          <img src="./images/Matrix api.jpeg" alt="Matrix example diagram">
+          <span class="polaroid-details">
+            Example of Matrix one-to-one chatroom being created
+          </span>
+        </div>
+
+        <p>
+          The front-end and back-end code will then be hosted online through a cloud service provider such as AWS, Azure or Google Cloud. Although the team has not concluded which cloud provider to go with yet, and therefore have not fully scoped out which technology to use from any of those providers, it is somewhat safe to assume that this stage that we would require to procure a storage bucket for our front-end code and other static content such as images. It is also safe to assume that back-end will likely be run on a server instance, however some back-end code may be delegated to serverless technologies also, depending on cost constraints and performance requirements. 
+        </p>
+
+        <div class="polaroid">
+          <img src="./images/Cloud diagram.jpeg" alt="Cloud services diagram">
+          <span class="polaroid-details">
+            Cloud services diagram
+          </span>
+        </div>
+
+        <p>
+          Furthermore, the application will require access to data storage services for storing credentials and personal information of users, although undecided by the team at this stage, the two best options that come to mind are SQL and NoSQL Databases.
+        </p>
+
+        <ol>
+          <li>
+            Users should be able to create their own accounts, edit their personal information on those accounts. 
+          </li>
+          <li>
+            Users should be able to delete their accounts and all records pertaining to their personal information that is saved by the system. Chat records in public servers will stay, however all one-to-one communication isn't saved anywhere except between the two clients who communicated with one another. 
+          </li>
+          <li>
+            Users should be able to add other users as friends for purposes such as remembering details of one another, making it easier to start a one-to-one communication channel etc. 
+          </li>
+          <li>
+            Users should be able to block other users so that they will not be able to be contacted by those users with whom they do not wish to communicate with. 
+          </li>
+          <li>
+            Users should be able to create one-to-one communication with both text and VoIP services. 
+          </li>
+          <li>
+            Users should be able to create their own communities (public servers) so that they can be part of a group who share the same interests, hobbies etc. And can communicate through these public servers using both text and VoIP. 
+          </li>
+          <li>
+            Users should be able to administrate their own communities (servers) and provide administrative rights to users they trust. 
+          </li>
+          <li>
+            Users should be able to delete their communities (servers) 
+          </li>
+        </ol>
+
+        <p>
+          Looking to the future of the application after a minimum viable product has been created, it would be possible to add additional features such as incorporating other services into the application, such as bringing in data from WhatsApp, Discord, Facebook, Slack and more thanks to Matrix's bridging features.
+        </p>
+
         <h3>Tools and Technologies</h3>
         <p>
           The original plan for the project was to be released as a dating app style application, exclusively on the Apple platform for mobile devices. Once Bravo was formed, as a team we discussed the best options on the platform we would use to construct our project. The team concluded that the best approach would be to build a web- based prototype hosted online through a cloud services provider giving users access from any device.
