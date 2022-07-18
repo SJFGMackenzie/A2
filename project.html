@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Team Bravo A2 - ITT</title>
+</head>
+<body>
+
+  <header>
+
+    <nav>
+      <h1><a href="index.html">Bravo Assignment 2</a></h1>
+      <ul>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="ideal-jobs.html">Ideal Jobs</a></li>
+        <li><a href="industry-data.html">Industry Data</a></li>
+        <li><a href="team-profile.html">Team Profile</a></li>
+        <li><a href="it-technologies.html">IT Technologies</a></li>
+        <li><a href="interview.html">Interview</a></li>
+        <li><a href="reflections.html">Reflections</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  
+  <div class="container">
+
+   
+      <article>
+        <h2>Project Idea</h2>
+        <span>Written by Thomas Kauran & Jo Stammers</span>
+        <h3>Overview</h3>
+        <p>
+          An idea for a project which aims to provide all Defense and Emergency Services Personnel with a secure meeting place to chat with likeminded people and others that understand the trauma only they usually experience. The idea is to provide a space with a general area where everybody can communicate, further providing a private end-to-end encrypted space where one-on-one and group private chats transpire. The following sections will discuss in further detail the motivation behind the project, and a detailed description of the project idea; followed by a detailed description on the tools and technologies that will be required to build this project.
+        </p>
+
+        <h3>Motivation</h3>
+        <p>
+          We understand that those with careers in Defense and Emergency Services alike go through experiences not many outside of those professions would ever experience. These professions though, see trauma repeatedly on a regular basis. AIHW (2021) reported ex-serving defense personnel have suicide rates much higher than the Australian population, with males at a rate of 24% higher and an astonishing rate of 102% higher in females. Moreover, Police health (no date) reported the Beyond Blue research showed a first responder takes their life every six weeks. However, despite these figures, these two professions have the least of mental health service provided to them. Very few services are dedicated to Defense, and most of what are available are government provided. Emergency services do have more on offer specific to them than defense, however still these services are limited for the percentage that suffer from profession related mental health. What they don't have, at all, is a place to be able to talk to others that understand what they do, the traumas, and the things just no-one else can understand, not even a professional psychologist. Our idea is to provide this service specific to Defense and Emergency Service Personnel.
+        </p>
+
+        <h3>Description</h3>
+
+        <h4>Proposed Idea</h4>
+        <p>
+          A Social Communication Platform that is specific to Defense Force Personnel and Emergency Services Personnel exclusively so they can connect with like -minded people to support mental health for these professions. Users will have access to a public server which will be an all-access area, with proposed 'notice board' type area which will provide links to online mental health assistance services and phone numbers for help and assistance lines relative to our target audience specifically. Additional to the main server, will have access to private one-on-one conversation, or chat groups. Further, the ability to create their own space that is for a particular topic or interest, eg. Fellow ARMY veterans that may want a space to be just ARMY, there maybe some police from an area that know each other might like to have their own area to be able to communicate and share in a space that is just them.
+        </p>
+
+        <p>
+          The design of the user experience has not been considered too much at this point of the project planning; However, one idea was to present it in a 'Hotel' style, with a 'Main Lobby' (being the general server), with a 'Noticeboard' (containing the mental health assistance links and phone lines), 'conference room' which would be the (private server areas); and 'Hotel Rooms' would be their (one-on-one or group-chat communication areas). Next, name it “Bravo Mike Hotel Services” (Mike = Mental, Hotel = Health). 
+        </p>
+
+        <h4>Proposed Production</h4>
+
+        <p>
+          It will be a web-based application that will offer its target audience a way to securely communicate online both privately and publicly with like-minded individuals seeking help. The platform will be built using a range of technologies to build the platform. The team currently believes that to build this project from scratch, it will require a web-based front-end powered by HTML, CSS and JavaScript, back-end services such as a web-API to service the front-end, Matrix API for handling the chat rooms, server lobbies, and all social communications in general. 
+        </p>
+
+        <p>
+          The front-end and back-end code will then be hosted online through a cloud service provider such as AWS, Azure or Google Cloud. Although the team has not concluded which cloud provider to go with yet, and therefore have not fully scoped out which technology to use from any of those providers, it is somewhat safe to assume that this stage that we would require to procure a storage bucket for our front-end code and other static content such as images. It is also safe to assume that back-end will likely be run on a server instance, however some back-end code may be delegated to serverless technologies also, depending on cost constraints and performance requirements. 
+        </p>
+
+        <p>
+          Furthermore, the application will require access to data storage services for storing credentials and personal information of users, although undecided by the team at this stage, the two best options that come to mind are SQL and NoSQL Databases.
+        </p>
+
+        <ol>
+          <li>
+            Users should be able to create their own accounts, edit their personal information on those accounts. 
+          </li>
+          <li>
+            Users should be able to delete their accounts and all records pertaining to their personal information that is saved by the system. Chat records in public servers will stay, however all one-to-one communication isn't saved anywhere except between the two clients who communicated with one another. 
+          </li>
+          <li>
+            Users should be able to add other users as friends for purposes such as remembering details of one another, making it easier to start a one-to-one communication channel etc. 
+          </li>
+          <li>
+            Users should be able to block other users so that they will not be able to be contacted by those users with whom they do not wish to communicate with. 
+          </li>
+          <li>
+            Users should be able to create one-to-one communication with both text and VoIP services. 
+          </li>
+          <li>
+            Users should be able to create their own communities (public servers) so that they can be part of a group who share the same interests, hobbies etc. And can communicate through these public servers using both text and VoIP. 
+          </li>
+          <li>
+            Users should be able to administrate their own communities (servers) and provide administrative rights to users they trust. 
+          </li>
+          <li>
+            Users should be able to delete their communities (servers) 
+          </li>
+        </ol>
+
+        <p>
+          Looking to the future of the application after a minimum viable product has been created, it would be possible to add additional features such as incorporating other services into the application, such as bringing in data from WhatsApp, Discord, Facebook, Slack and more thanks to Matrix's bridging features.
+        </p>
+
+        <h3>Tools and Technologies</h3>
+        <p>
+          The original plan for the project was to be released as a dating app style application, exclusively on the Apple platform for mobile devices. Once Bravo was formed, as a team we discussed the best options on the platform we would use to construct our project. The team concluded that the best approach would be to build a web- based prototype hosted online through a cloud services provider giving users access from any device.
+        </p>
+
+        <h4>Front-end</h4>
+        <p>
+          For the front-end we have decided that it will be presented through a web browser as all devices we anticipate our target audience to use this service will have a web browser installed, namely desktop, laptop, tablets, and mobile devices. Thomas, with his prior knowledge, suggests we that we use HTML5, CSS3 and JavaScript to create a feature-rich and friendly user experience for our target audience (Reactjs, 2022). For CSS3 there are plenty of frameworks that help provide a familiar set of rules for the team to follow and apply to the prototype, and eventually a final product, the likely choice will be Bootstrap. To create a feature-rich user experience, the likely choice for minimal framework would be the React framework by Meta Platforms Inc, due to Thomas with prior experience.
+        </p>
+
+        <h4>Back-end</h4>
+        <p>
+          For the back-end, Microsoft's C# .NET core platform would be the best choice for the team given Thomas has experience in back-end programming is in C# .NET core. Whereas the rest of the team has little to no experience in programming. C# .NET core provides a platform agnostic framework that can be used to build Cloud applications - which we will touch on later in this report; Cross-platform applications, Windows Apps and much more.
+        </p>
+
+        <div class="polaroid">
+          <img src="./images/system-diagram.jpeg" alt="System diagram">
+          <span class="polaroid-details">
+            System diagram
+          </span>
+        </div>
+
+        <p>
+          It has many features such as Asynchronous code, Delegates and Lambdas, Events, Garbage Collection, Generic Types, and LINQ (Docs.microsoft.com, 2022) just to name a few.
+          Matrix has two open-source packages for C# .NET, one named MatrixAPI (Github, 2020), while the second open-source package for C# .NET is named Matrix DotNet SDK (Github,2021 ).
+        </p>
+
+        <div class="polaroid">
+          <img src="./images/Matrix api.jpeg" alt="Matrix example diagram">
+          <span class="polaroid-details">
+            Example of Matrix one-to-one chatroom being created
+          </span>
+        </div>
+
+        <p>
+          Both packages mentioned above look promising to create a working prototype of creating both a server with a main area, or all-access area, where all users can communicate in a general area, with a private end-to-end encryption section which would allow users to open a private one-on-one or group chat room that provides privacy for sensitive conversations.
+        </p>
+
+        <h4>Cloud Infrastructure</h4>
+        <p>
+          We will be using SaaS cloud services to provide the service to the proposed public. SaaS or Software as a Service is a distribution model hosted by cloud service providers. The service providers we might consider are Amazon Web Services (AWS); Google Cloud Services (GCS); or Microsoft (Azure). The SaaS service, hosted by one or more of these providers allows us to deploy software on their infrastructure. We would be responsible for building our software; granting access for intended users; creating and managing accounts; and resource provisioning (AWS, no date). While the service provider manages all Hardware and software including app software and middleware, and even provides security (Oracle, no date).
+        </p>
+
+        <div class="polaroid">
+          <img src="./images/Cloud diagram.jpeg" alt="Cloud services diagram">
+          <span class="polaroid-details">
+            Cloud services diagram
+          </span>
+        </div>
+
+        <p>
+          When choosing a cloud service provider, there are things that should be considered. 
+          Firstly, is making sure the service meets the expectation of what you want to achieve; In our circumstance we want a service that allows us to deploy an end user software that provides a social communication web application. 
+          Secondly, the reliability of the provider should be taken into consideration; a provider with a high availability will generally have some level of disaster recovery and fault tolerance in response to major disaster; Their uptime and down time is important to consider, taking note of how they measure (Stephenson, no date). 
+        </p>
+
+        <p>
+          Significantly, cloud services are not free of cost; therefore, pricing would be a factor we must consider when choosing a cloud service provider. We would need to consider the method in which each provider calculates their pricing, for the services they would be providing; Also to consider is, if there will be additional costs for a service not included or are they flexible to tailor a plan.
+          The particular cloud services we will require cannot possibly be known until we get further into planning in upcoming assignment 3. Therefore, further detail into the factors around which service providers we would consider, will be expanded on within assignment 3.
+        </p>
+
+        <h4>IDE's</h4>
+        <p>
+          Visual Studio Code was created by Microsoft as an open-source project, it is the most popular IDE (Integrated Development Environment) today in 2022 (Sharma, 2022) and for good reason, it has support for hundreds of thousands, if not millions, of plugins created by a community of developers. These plugins help to make programming easier for everyone to create the best work they can (Code.visualstudio.com, 2022). 
+        </p>
+
+        <p>
+          Some plugins assist with connecting to git repositories, help with testing the software created, syntax highlighting, and support for many languages just to name a few of the features it supports.
+          Visual Studio is another creation of Microsoft's released in 1997. Since then, it has made many improvements over the years and has become what many would consider to be the best IDE for writing code related to C#, Visual Basic and MSSQL. It is feature-rich, providing built-in debugging tools for the languages mentioned above, it provides frameworks when creating projects with example code, such as a MVC project, API project etc. It also provides built-in git tracking (Visual Studio. 2022).
+        </p>
+
+        <h4>Design Tools</h4>
+
+        <p>
+          Figma, released in 2016 is a vector graphics editor and prototyping tool used by designers. It is a tool primarily used by web designers to build designs and prototypes that are then passed onto front end developers to re-create those designs with HTML, CSS and JavaScript (Figma, 2022). Figma can be used by the team for creating mockups and designs for what the front end of the prototype and final product might look like.
+        </p>
+
+        <p>
+          Lucid Chart is a diagramming application that is accessible online through a web browser. It allows teams to collaborate visually. You can create diagrams and charts to share designs and provide insight into solutions for ideas, generally software based. E.g., Database Design, systems architecture, or UML (Unified Modeling Language) diagram (Lucid, 2022). Lucid Chart will be useful for creating UML diagrams and system architecture required for our prototype and final product.
+        </p>
+
+        <h4>Software Development tracking tools</h4>
+        <p>
+          Git is software created for tracking changes in files, usually between programmers so that they can coordinate efforts and not have conflicting work with one another (Git, 2022). GitHub further helps with this by providing Software as a Service for storing git repositories online, accessible anywhere for both solo developers, and teams of developers and even organizations (GitHub, 2022). 
+
+          Git and GitHub have helped and will continue to help into the future of this project by helping us share code and coordinate with one another.
+        </p>
+
+        <p>
+          Trello is a web-based Kanban style application that allows users, both solo and part of a team, to layout and track a project through setting goals. These goals that are set can then be tracked and associated with members of the team to complete (Trello, 2022). Often used for software development that are broken down into small problems that a single developer can work on, complete the task, then mark it as complete and move onto the next problem to solve, helping a project manager to have an overview of progress made. This software will help our group to create a plan for creating a prototype of our project idea and assign tasks for our third assignment.
+        </p>
+
+        <h3>Skills required</h3>
+
+        <p>
+          Overall, the team will require the following skills to build this project.
+        </p>
+
+        <ul>
+          <li>Software Development</li>
+          <li>Software Development Lifecycle</li>
+          <li>Frontend languages</li>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 (Bootstrap Framework)</li>
+            <li>JavaScript (React framework)</li>
+          </ul>
+          <li>Backend languages</li>
+          <ul>
+            <li>C# .NET Core</li>
+          </ul>
+          <li>Frameworks / libraries needed</li>
+          <ul>
+            <li>Matrix (Matrix.org)</li>
+          </ul>
+          <li>
+            Cloud Infrastructure
+          </li>
+          <ul>
+            <li>Provider Dependent</li>
+            <ul>
+              <li>AWS</li>
+              <li>Azure</li>
+              <li>GCS</li>
+            </ul>
+          </ul>
+          <li>IDE's</li>
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>Visual Studio (for C#)</li>
+          </ul>
+          <li>Design tools</li>
+          <ul>
+            <li>Figma</li>
+            <li>Lucid Chart</li>
+          </ul>
+          <li>
+            Software Development tracking tools
+            <ul>
+              <li>Git and GitHub</li>
+              <li>Kanban boards (Trello)</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Outcome</h3>
+        <p>
+          If the project is successful, we intend to make it accessible exclusively to Defense Force and Emergency services personnel worldwide. The effects of mental health in these professions are drastic, which drives us to make this easily accessible to public. We do expect to experience criticism and negative reaction due to some individuals or groups that may find the content shared on this app offensive. We will continue to work on this as we move into assignment 3, elaborating on the tools and technologies we will be required to use and creating as mush as at least a prototype of out project.
+        </p>
+      </article>
+  </div>
+  
+</body>
+</html>
