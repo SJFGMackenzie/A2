@@ -62,30 +62,9 @@
           It will be a web-based application that will offer its target audience a way to securely communicate online both privately and publicly with like-minded individuals seeking help. The platform will be built using a range of technologies to build the platform. The team currently believes that to build this project from scratch, it will require a web-based front-end powered by HTML, CSS and JavaScript, back-end services such as a web-API to service the front-end, Matrix API for handling the chat rooms, server lobbies, and all social communications in general. 
         </p>
 
-        <div class="polaroid">
-          <img src="./images/system-diagram.jpeg" alt="System diagram">
-          <span class="polaroid-details">
-            System diagram
-          </span>
-        </div>
-
-        <div class="polaroid">
-          <img src="./images/Matrix api.jpeg" alt="Matrix example diagram">
-          <span class="polaroid-details">
-            Example of Matrix one-to-one chatroom being created
-          </span>
-        </div>
-
         <p>
           The front-end and back-end code will then be hosted online through a cloud service provider such as AWS, Azure or Google Cloud. Although the team has not concluded which cloud provider to go with yet, and therefore have not fully scoped out which technology to use from any of those providers, it is somewhat safe to assume that this stage that we would require to procure a storage bucket for our front-end code and other static content such as images. It is also safe to assume that back-end will likely be run on a server instance, however some back-end code may be delegated to serverless technologies also, depending on cost constraints and performance requirements. 
         </p>
-
-        <div class="polaroid">
-          <img src="./images/Cloud diagram.jpeg" alt="Cloud services diagram">
-          <span class="polaroid-details">
-            Cloud services diagram
-          </span>
-        </div>
 
         <p>
           Furthermore, the application will require access to data storage services for storing credentials and personal information of users, although undecided by the team at this stage, the two best options that come to mind are SQL and NoSQL Databases.
@@ -137,10 +116,24 @@
           For the back-end, Microsoft's C# .NET core platform would be the best choice for the team given Thomas has experience in back-end programming is in C# .NET core. Whereas the rest of the team has little to no experience in programming. C# .NET core provides a platform agnostic framework that can be used to build Cloud applications - which we will touch on later in this report; Cross-platform applications, Windows Apps and much more.
         </p>
 
+        <div class="polaroid">
+          <img src="./images/system-diagram.jpeg" alt="System diagram">
+          <span class="polaroid-details">
+            System diagram
+          </span>
+        </div>
+
         <p>
           It has many features such as Asynchronous code, Delegates and Lambdas, Events, Garbage Collection, Generic Types, and LINQ (Docs.microsoft.com, 2022) just to name a few.
           Matrix has two open-source packages for C# .NET, one named MatrixAPI (Github, 2020), while the second open-source package for C# .NET is named Matrix DotNet SDK (Github,2021 ).
         </p>
+
+        <div class="polaroid">
+          <img src="./images/Matrix api.jpeg" alt="Matrix example diagram">
+          <span class="polaroid-details">
+            Example of Matrix one-to-one chatroom being created
+          </span>
+        </div>
 
         <p>
           Both packages mentioned above look promising to create a working prototype of creating both a server with a main area, or all-access area, where all users can communicate in a general area, with a private end-to-end encryption section which would allow users to open a private one-on-one or group chat room that provides privacy for sensitive conversations.
@@ -150,6 +143,13 @@
         <p>
           We will be using SaaS cloud services to provide the service to the proposed public. SaaS or Software as a Service is a distribution model hosted by cloud service providers. The service providers we might consider are Amazon Web Services (AWS); Google Cloud Services (GCS); or Microsoft (Azure). The SaaS service, hosted by one or more of these providers allows us to deploy software on their infrastructure. We would be responsible for building our software; granting access for intended users; creating and managing accounts; and resource provisioning (AWS, no date). While the service provider manages all Hardware and software including app software and middleware, and even provides security (Oracle, no date).
         </p>
+
+        <div class="polaroid">
+          <img src="./images/Cloud diagram.jpeg" alt="Cloud services diagram">
+          <span class="polaroid-details">
+            Cloud services diagram
+          </span>
+        </div>
 
         <p>
           When choosing a cloud service provider, there are things that should be considered. 
