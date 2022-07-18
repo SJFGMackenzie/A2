@@ -69,6 +69,12 @@ th, td {
   overflow: hidden;
 }
 
+/* Ideal Jobs */
+
+.comparison-img {
+  max-width: 700px;
+}
+
 /* LINKS */
 
 a {
