@@ -76,6 +76,20 @@ th, td {
   max-width: 700px;
 }
 
+/* IT TECHNOLOGIES */
+
+.polaroid {
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+div.polaroid > img {
+  width: 100%;
+}
+
 /* LINKS */
 
 a {
